@@ -1,0 +1,8 @@
+// <---------- grid layout styles ------------>
+
+.even__columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+	gap: 2rem;
+	padding: 5rem;
+}
