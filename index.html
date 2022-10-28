@@ -48,21 +48,28 @@
                 </ul>
             </nav>
         </div>
-
         <div class="hero">
-            <h1>Joel del Pilar</h1>
-            <span class="fw-400">Front End Dev student</span><br>
-            <a href="www.medieinstitutet.se"><span>&#64;</span>Medieinstitutet<span>&copy;</span></a>
-        </div>
+            <section class="hero__flex">
+                <h1 class="hero__flex--title fs__900">Joel del Pilar</h1>
+                <span class="fw-400 fs__500">Front End Dev student</span><br>
+                <a href="www.medieinstitutet.se" rel="noopener noreferrer"
+                    target="_blank"><span>&#64;</span>Medieinstitutet</a>
+            </section>
 
-        <div class="hero__button__arrowdown"></div>
+            <div class="hero__button__arrowdown">
+                <a data-scroll href="#pagedown">
+                    <div class="arrow"></div>
+                </a>
+            </div>
+
+        </div>
     </header>
 
     <main class="page__main">
 
         <div class="page__first__grid even__colums">
 
-            <article class="page__main_grid--article article__left">
+            <article class="page__main_grid--article article__left" id="pagedown">
                 <h2>Get to know me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum voluptates molestias
                     veritatis! Tempora fugiat atque, rerum porro voluptas, hic, laborum quos voluptate libero aspernatur
@@ -130,10 +137,12 @@
                     <a href="mailto: joel.delpilar@medieinstitutet.se">Joel.delpilar@medieinstitutet.se</a>
                 </li>
                 <li>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://www.linkedin.com/in/joeldelpilar/" rel="noopener noreferrer" class="fa fa-linkedin"
+                        target="_blank"></a>
                 </li>
                 <li>
-                    <a href="#" class="fa fa-github"></a>
+                    <a href="https://github.com/JoeldelPilar" rel="noopener noreferrer" class="fa fa-github"
+                        target="_blank"></a>
                 </li>
             </ul>
         </div>
