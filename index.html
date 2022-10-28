@@ -4,17 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>Joel del Pilar CV</title>
-    <meta name="description" content="web page">
+    <meta name="description" content="CV as webpage by Joel del Pilar">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
+    <meta property="og:title" content="Front End Dev Joel del Pilar">
+    <meta property="og:type" content="webpage">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -27,24 +30,32 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li>Got to know me</li>
-                <li>Fun facts</li>
-                <li>knowladge</li>
-                <li>Experience</li>
-            </ul>
-        </nav>
+
+        <input class="hamburger__menu__clicked" type="checkbox">
+        <div class="menu">
+            <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav>
+                <ul class="menu__list fw-700">
+                    <li>Get to know me</li>
+                    <li>Fun facts</li>
+                    <li>knowladge</li>
+                    <li>Experience</li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="hero">
             <h1>Joel del Pilar</h1>
-            <span>Front End Dev student</span><br>
+            <span class="fw-400">Front End Dev student</span><br>
             <a href="www.medieinstitutet.se"><span>&#64;</span>Medieinstitutet<span>&copy;</span></a>
         </div>
 
-        <div class="hero__button__arrowdown">
-
-        </div>
+        <div class="hero__button__arrowdown"></div>
     </header>
 
     <main class="page__main">

@@ -12,7 +12,90 @@
 	}
 }
 
-nav {
+// <----------------- Hamburger menu ---------------------->
+// Credits to Jenni Pulli, https://github.com/postmodernistx
+// minor changes made by the author such as animation and some styling.
+
+.menu__btn {
+	width: 2.1875rem;
+	height: 2.1875rem;
+	background: transparent;
+	border: 0;
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 20;
+	pointer-events: none;
+
+	span {
+		display: block;
+		width: 2.1875rem;
+		height: 0.1875rem;
+		background-color: var(--clr-accent-500);
+		border-radius: 0.375rem;
+		margin-block-end: 0.25rem;
+	}
+}
+
+.hamburger__menu__clicked {
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 10;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.hamburger__menu__clicked:checked + .menu button span {
 	position: absolute;
+	transition: all 0.2s ease-in-out;
+}
+
+.hamburger__menu__clicked:checked + .menu button span:nth-child(1) {
+	transform: rotate(45deg);
+}
+
+.hamburger__menu__clicked:checked + .menu button span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger__menu__clicked:checked + .menu button span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: hsla(60, 13%, 88%, 0.9);
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	visibility: hidden;
+}
+
+@media screen and (min-width: 40em) {
+	nav {
+		width: 50vw;
+	}
+}
+
+.hamburger__menu__clicked:checked + .menu nav {
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu__list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin-block-start: 5rem;
+	margin-inline-end: 3rem;
+	gap: 2rem;
+	// justify-content: space-between;
+	text-align: end;
 }

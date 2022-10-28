@@ -30,6 +30,10 @@ ul {
 	padding: 0;
 }
 
+li {
+	font-weight: inherit;
+}
+
 /* Set core root defaults */
 html:focus-within {
 	scroll-behavior: smooth;
@@ -41,6 +45,7 @@ body {
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 	font-size: 100%;
+	scroll-behavior: smooth;
 }
 
 /* A elements that don't have a class get default styles */
@@ -61,6 +66,8 @@ button,
 textarea,
 select {
 	font: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
