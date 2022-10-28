@@ -4,7 +4,7 @@ header {
 
 .hero {
 	background-color: rgba(40, 100, 40, 0.849);
-	background-image: url(../../assets/img/header_background_mobile.jpeg);
+	background-image: url(../assets/img/header_background_mobile.jpeg);
 	background-size: cover;
 	height: 80vh;
 	background-repeat: no-repeat;
@@ -12,7 +12,7 @@ header {
 
 @media screen and (min-width: 40em) {
 	.hero {
-		background-image: url(../../assets/img/header_background_desktop.jpg);
+		background-image: url(../assets/img/header_background_desktop.jpg);
 	}
 }
 
@@ -39,6 +39,10 @@ header {
 		border-radius: 0.375rem;
 		margin-block-end: 0.25rem;
 	}
+}
+
+.menu__btn:hover span:nth-child(2) {
+	opacity: 0;
 }
 
 .hamburger__menu__clicked {
