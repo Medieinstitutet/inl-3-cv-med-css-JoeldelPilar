@@ -2,7 +2,36 @@
 
 .even__columns {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+	// grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-template-columns: 1fr;
 	gap: 2rem;
-	padding: 5rem;
+	padding-inline: 3rem;
+}
+
+@media screen and (min-width: 50rem) {
+	.even__columns {
+		grid-template-columns: 1fr 1fr auto;
+		padding-inline: 5rem;
+	}
+}
+
+.page__first__grid {
+	margin-block-end: 4rem;
+}
+
+.page__second__grid {
+	margin-block-end: 4rem;
+}
+
+.cards {
+	margin-block-end: 4rem;
+}
+
+.page__main__grid--article {
+	order: -1;
+}
+@media screen and (min-width: 50rem) {
+	.page__main__grid--article {
+		order: 2;
+	}
 }
