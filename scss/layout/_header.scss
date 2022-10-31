@@ -1,5 +1,6 @@
 header {
 	position: relative;
+	margin-block-end: 4rem;
 }
 
 .hero {
@@ -10,7 +11,7 @@ header {
 	background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50rem) {
 	.hero {
 		background-image: url(../assets/img/header_background_desktop.jpg);
 	}
@@ -85,7 +86,7 @@ nav {
 	visibility: hidden;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50rem) {
 	nav {
 		width: 50vw;
 	}
@@ -125,14 +126,17 @@ nav {
 	// text-shadow: 0.0625rem 0.0625rem 0.25rem var(--clr-accent-500);
 }
 
-.hero__flex > span,
-a {
+.hero__flex {
 	color: var(--clr-primary-200);
+}
+
+.empower__link {
+	color: inherit;
 }
 
 // <-------------------- Scroll down Arrow --------------------->
 // <----- credits to https://codepen.io/pjwiebe/pen/VmmxpM ----->
-// <- I've added the rounded background and added code for positioning.
+// <- I've added the rounded background and added code for positioning ->
 
 .arrow {
 	height: 1.5rem;
