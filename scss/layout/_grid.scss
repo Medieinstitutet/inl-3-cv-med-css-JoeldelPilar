@@ -6,6 +6,8 @@
 	grid-template-columns: 1fr;
 	gap: 2rem;
 	padding-inline: 3rem;
+	width: min(100% - 2.5rem, 75rem);
+	margin-inline: auto;
 }
 
 @media screen and (min-width: 50rem) {

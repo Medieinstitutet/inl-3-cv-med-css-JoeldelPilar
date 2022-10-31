@@ -11,7 +11,7 @@ header {
 	background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50rem) {
 	.hero {
 		background-image: url(../assets/img/header_background_desktop.jpg);
 	}
@@ -86,7 +86,7 @@ nav {
 	visibility: hidden;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50rem) {
 	nav {
 		width: 50vw;
 	}
