@@ -8,11 +8,12 @@
 	padding-inline: 3rem;
 	width: min(100% - 2.5rem, 75rem);
 	margin-inline: auto;
+	justify-items: center;
 }
 
 @media screen and (min-width: 50rem) {
 	.even__columns {
-		grid-template-columns: 1fr 1fr auto;
+		grid-template-columns: 1fr 1fr;
 		padding-inline: 5rem;
 	}
 }
@@ -22,7 +23,7 @@
 }
 
 .page__second__grid {
-	margin-block-end: 4rem;
+	margin-block-end: 10rem;
 }
 
 .cards {

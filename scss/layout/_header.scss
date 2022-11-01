@@ -146,6 +146,7 @@ nav {
 	border-color: white;
 	border-width: 0px 1px 1px 0px;
 	transform: rotate(45deg);
+	-webkit-transition: border-width 150ms ease-in-out;
 	transition: border-width 150ms ease-in-out;
 }
 

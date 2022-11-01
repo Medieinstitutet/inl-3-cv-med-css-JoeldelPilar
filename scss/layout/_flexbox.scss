@@ -1,6 +1,11 @@
 .even__columns__flex {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 80vw;
+	margin-inline: auto;
+	gap: 3rem;
 }
 
 @media screen and (min-width: 50rem) {
@@ -12,4 +17,7 @@
 .cards__child {
 	margin-block-end: 1rem;
 	padding-inline: 3rem;
+	min-width: 300px;
+	max-width: 500px;
+	margin-inline: auto;
 }
