@@ -109,7 +109,6 @@ nav {
 	margin-block-start: 5rem;
 	margin-inline-end: 3rem;
 	gap: 2rem;
-	// justify-content: space-between;
 	text-align: end;
 }
 
@@ -132,6 +131,16 @@ nav {
 
 .empower__link {
 	color: inherit;
+}
+
+.menu__proflie__picture {
+	background-image: url(../assets/img/joeldelpilar.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 50;
 }
 
 // <-------------------- Scroll down Arrow --------------------->

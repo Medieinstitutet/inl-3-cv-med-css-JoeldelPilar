@@ -22,52 +22,46 @@
 	);
 }
 
-// .decorative__img_holder {
-// 	width: fit-content;
-// 	height: 50%;
-// }
+.decorative__img_holder {
+	width: 100%;
+	height: 378px;
+	object-fit: cover;
+}
 
 .article__right ul {
 	list-style: inside;
+	line-height: 1.75rem;
 	padding: 1.5rem 0rem 0rem 1rem;
 }
 
 .list__html {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/html.svg);
 }
 
 .list__css {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/css.svg);
 }
 
 .list__js {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/js.svg);
 }
 
 .list__react {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/react.svg);
 }
 
 .list__api {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/api.svg);
 }
 
 .list__ux {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/user.svg);
 }
 
 .list__agile {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/agile.svg);
 }
 
 .list__testing {
-	line-height: 1.5rem;
 	list-style-image: url(../assets/svg/testing.svg);
 }
