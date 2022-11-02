@@ -11,21 +11,18 @@
 
 .cards__child h3 {
 	padding-inline-start: 1.5rem;
-	border-radius: 2rem 0 1rem 0.4rem;
+	border-radius: 10rem 0 10rem 0.4rem;
 	background: rgb(228, 228, 220);
 	background: linear-gradient(
 		-90deg,
 		rgba(242, 243, 204, 1),
-		rgba(108, 132, 131) 35%,
-
-		rgb(51, 65, 64) 100%
+		/*	rgba(169, 169, 162) 35%,*/ rgb(20, 48, 12) 80%
 	);
 }
 
-.decorative__img_holder {
-	width: 100%;
-	height: 378px;
-	object-fit: cover;
+.decorative__img__holder img {
+	height: auto;
+	// object-fit: cover;
 }
 
 .article__right ul {

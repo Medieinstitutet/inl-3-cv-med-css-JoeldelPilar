@@ -4,17 +4,36 @@ header {
 }
 
 .hero {
-	background-color: rgba(40, 100, 40, 0.849);
 	background-image: url(../assets/img/header_background_mobile.jpeg);
+	background-color: rgba(40, 100, 40, 0.5);
 	background-size: cover;
 	height: 80vh;
 	background-repeat: no-repeat;
+	background-blend-mode: color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 @media screen and (min-width: 50rem) {
 	.hero {
 		background-image: url(../assets/img/header_background_desktop.jpg);
 	}
+}
+
+.hero__flex--title {
+	color: var(--clr-primary-200);
+	letter-spacing: 0.15em;
+	// text-shadow: 0.0625rem 0.0625rem 0.25rem var(--clr-accent-500);
+}
+
+.hero__flex {
+	color: var(--clr-primary-200);
+}
+
+.empower__link {
+	color: inherit;
 }
 
 // <----------------- Hamburger menu ---------------------->
@@ -112,35 +131,24 @@ nav {
 	text-align: end;
 }
 
-.hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.hero__flex--title {
-	color: var(--clr-primary-200);
-	letter-spacing: 0.15em;
-	// text-shadow: 0.0625rem 0.0625rem 0.25rem var(--clr-accent-500);
-}
-
-.hero__flex {
-	color: var(--clr-primary-200);
-}
-
-.empower__link {
-	color: inherit;
-}
+// .hero {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	justify-content: space-around;
+// }
 
 .menu__proflie__picture {
 	background-image: url(../assets/img/joeldelpilar.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 180px;
+	border-radius: 50%;
+	display: flex;
 	position: absolute;
-	z-index: 50;
+	top: 5rem;
+	right: 50%;
 }
 
 // <-------------------- Scroll down Arrow --------------------->
