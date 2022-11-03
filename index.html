@@ -23,9 +23,9 @@
     <link rel="preload" fetchpriority="high" as="image" href="./assets/img/header_background_desktop.jpg"
         type="image/jpg"> -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="preload" as="font"
-        type="text">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"
+        as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="preload" as="font">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/styles.css" type="text/css">
@@ -37,9 +37,9 @@
 
     <header>
 
-        <input class="hamburger__menu__clicked" type="checkbox" title="menu button" aria-label="menu button">
+        <input class="hamburger__menu__clicked" type="checkbox" title="menu" aria-labelledby="menu button">
         <div class="menu" aria-label="menu button">
-            <button class="menu__btn" title="menu button" aria-label="menu button">
+            <button class="menu__btn" title="menu button" aria-labelledby="menu button">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -47,7 +47,7 @@
 
             <nav>
                 <ul class="menu__list fw-700">
-                    <li> <a href="#pagedown" title="get to know me"> Get to know me</a></li>
+                    <li> <a href="#pagedown" class="menu__list-1" title="get to know me"> Get to know me</a></li>
                     <li> <a href="#funfacts" title="fun facts">Fun facts</a></li>
                     <li> <a href="#knowledge" title="knowledge">Knowledge</a></li>
                     <li> <a href="#experience" title="experience">Experience</a></li>
