@@ -4,7 +4,7 @@ header {
 }
 
 .hero {
-	background-image: url(../assets/img/header_background_mobile.jpeg);
+	background-image: url(../assets/img/header_background_mobile.webp);
 	background-color: rgba(40, 100, 40, 0.5);
 	background-size: cover;
 	height: 80vh;
@@ -18,7 +18,7 @@ header {
 
 @media screen and (min-width: 50rem) {
 	.hero {
-		background-image: url(../assets/img/header_background_desktop.jpg);
+		background-image: url(../assets/img/header_background_desktop.webp);
 	}
 }
 
