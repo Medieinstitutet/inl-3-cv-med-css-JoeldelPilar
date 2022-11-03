@@ -118,10 +118,6 @@ nav {
 
 // <----- Closing nav when links are clicked ------>
 
-.menu__list-1:visited ~ nav {
-	visibility: hidden;
-}
-
 .hamburger__menu__clicked:checked + .menu nav {
 	visibility: visible;
 	opacity: 1;

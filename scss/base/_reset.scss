@@ -39,6 +39,13 @@ html:focus-within {
 	scroll-behavior: smooth;
 }
 
+html {
+	scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
+	-moz-scroll-behavior: smooth;
+	-o-scroll-behavior: smooth;
+}
+
 /* Set core body defaults */
 body {
 	min-height: 100vh;
