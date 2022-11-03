@@ -21,8 +21,8 @@
         type="image/webp">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"
         rel="preload">
-    <link rel="stylesheet" rel="preload"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="url/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/styles.css" type="text/css">
 
     <meta name="theme-color" content="#fafafa">
@@ -42,14 +42,31 @@
 
             <nav>
                 <ul class="menu__list fw-700">
-                    <li>Get to know me</li>
-                    <li>Fun facts</li>
-                    <li>knowledge</li>
-                    <li>Experience</li>
+                    <li> <a href="#pagedown" title="get to know me"> Get to know me</a></li>
+                    <li> <a href="#funfacts" title="fun facts">Fun facts</a></li>
+                    <li> <a href="#knowledge" title="knowledge">knowledge</a></li>
+                    <li> <a href="#experience" title="experience">Experience</a></li>
                 </ul>
-
-                <div class="menu__proflie__picture">
+                <div>
+                    <div class="menu__proflie__picture">
+                    </div>
+                    <button class="menu__contact__btn fw-700" type="button" title="contact">
+                        <a href="mailto: joel.delpilar@medieinstitutet.se" target="_blank">Let's talk!</a>
+                    </button>
                 </div>
+
+                <section class="menu__socials">
+                    <h2>Check us out too!</h2>
+                    <div>
+                        <a href="https://www.linkedin.com/in/joeldelpilar/" rel="noopener noreferrer"
+                            class="fa fa-linkedin" target="_blank"></a>
+
+                        <a href="https://github.com/JoeldelPilar" rel="noopener noreferrer" class="fa fa-github"
+                            target="_blank"></a>
+                    </div>
+                </section>
+
+
 
             </nav>
         </div>
@@ -98,7 +115,7 @@
                     width="504" height="466">
             </div>
 
-            <article class="page__main__grid--article article__right">
+            <article class="page__main__grid--article article__right" id="education">
                 <h2>Education</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur officiis nihil tempora modi,
                     consequuntur aliquam minima esse quidem odio expedita aperiam rerum dolores, voluptates eveniet
@@ -118,19 +135,19 @@
 
         <section class="cards even__columns__flex">
 
-            <article class="cards__child card__funfact">
+            <article class="cards__child card__funfact" id="funfacts">
                 <h3>Fun Facts</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci modi in incidunt praesentium
                     officiis molestiae.</p>
             </article>
 
-            <article class="cards__child card__knowladge">
+            <article class="cards__child card__knowladge" id="knowledge">
                 <h3>Knowledge</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, facere. Eius fugiat vitae
                     veritatis. Corrupti!</p>
             </article>
 
-            <article class="cards__child card__experience">
+            <article class="cards__child card__experience" id="experience">
                 <h3>Experience</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi, ipsa ducimus voluptate
                     perspiciatis doloribus.</p>
@@ -141,24 +158,20 @@
     </main>
 
     <footer>
-        <div>
-            <h4>
-                Contact
-            </h4>
-            <ul>
-                <li>
-                    <a href="mailto: joel.delpilar@medieinstitutet.se"
-                        target="_blank">Joel.delpilar@medieinstitutet.se</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/joeldelpilar/" rel="noopener noreferrer" class="fa fa-linkedin"
-                        target="_blank"></a>
-                </li>
-                <li>
-                    <a href="https://github.com/JoeldelPilar" rel="noopener noreferrer" class="fa fa-github"
-                        target="_blank"></a>
-                </li>
-            </ul>
+        <div class="footer__main__container">
+            <button class="footer__contact__btn fw-700" type="button" title="contact">
+                <a href="mailto: joel.delpilar@medieinstitutet.se" target="_blank">Let's talk!</a>
+            </button>
+            <div class="footer__contact__socials">
+                <p>Don't forget about us! </p>
+
+                <a href="https://www.linkedin.com/in/joeldelpilar/" rel="noopener noreferrer" class="fa fa-linkedin"
+                    target="_blank"></a>
+
+
+                <a href="https://github.com/JoeldelPilar" rel="noopener noreferrer" class="fa fa-github"
+                    target="_blank"></a>
+            </div>
         </div>
     </footer>
 </body>
