@@ -29,4 +29,11 @@
 .footer__contact__socials {
 	display: flex;
 	justify-content: flex-end;
+	gap: 1rem;
+
+	& p {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
 }
