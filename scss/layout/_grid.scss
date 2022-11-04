@@ -2,7 +2,6 @@
 
 .even__columns {
 	display: grid;
-	// grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	grid-template-columns: 1fr;
 	gap: 2rem;
 	padding-inline: 3rem;

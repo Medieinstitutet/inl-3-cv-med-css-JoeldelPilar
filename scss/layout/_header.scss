@@ -2,7 +2,18 @@ header {
 	position: relative;
 	margin-block-end: 4rem;
 }
-
+.visually-hidden {
+	position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
 .hero {
 	background-image: url(../assets/img/header_background_mobile.webp);
 	background-color: rgba(40, 100, 40, 0.7);
@@ -140,6 +151,7 @@ nav {
 
 	& > li a {
 		color: var(--clr-primary-900);
+		text-decoration: none;
 	}
 }
 

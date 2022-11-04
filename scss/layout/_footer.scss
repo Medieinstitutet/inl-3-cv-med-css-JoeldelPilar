@@ -18,10 +18,6 @@ footer {
 }
 
 .footer__arrow {
-	// border: solid 0.125rem var(--clr-primary-200);
-	// border-width: 0px 3px 3px 0;
-	// display: inline-block;
-	// padding: 3px;
 	background: url(../assets/svg/arrowright.svg);
 	background-repeat: no-repeat;
 	display: block;
@@ -39,9 +35,6 @@ footer {
 	-moz-animation: bounce 3s infinite;
 	-webkit-animation: bounce 3s infinite;
 	animation: bounce 3s infinite;
-	// transform: rotate(-45deg);
-	// -webkit-transform: rotate(-45deg);
-	// -moz-transform: rotate(-45deg);
 }
 
 @-moz-keyframes bounce {
