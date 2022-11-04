@@ -26,7 +26,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/styles.css" type="text/css">
-
     <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -34,7 +33,8 @@
 
     <header>
 
-        <input class="hamburger__menu__clicked" type="checkbox" title="menu" aria-label="menu button">
+        <input class="hamburger__menu__clicked" id="hamburgerMenu" type="checkbox" title="menu" aria-label="menu button"
+            checked="null">
         <div class="menu">
             <button class="menu__btn" title="menu button" aria-label="menu button">
                 <span></span>
@@ -44,17 +44,17 @@
 
             <nav>
                 <ul class="menu__list fw-700">
-                    <li> <a href="#pagedown" title="get to know me"> Get to know me</a></li>
-                    <li> <a href="#funfacts" title="fun facts">Fun facts</a></li>
-                    <li> <a href="#knowledge" title="knowledge">Knowledge</a></li>
-                    <li> <a href="#experience" title="experience">Experience</a></li>
+                    <li> <a href="#pagedown" title="get to know me" onclick="closeMenu()"> Get to know me</a></li>
+                    <li> <a href="#funfacts" title="fun facts" onclick="closeMenu()">Fun facts</a></li>
+                    <li> <a href="#knowledge" title="knowledge" onclick="closeMenu()">Knowledge</a></li>
+                    <li> <a href="#experience" title="experience" onclick="closeMenu()">Experience</a></li>
                 </ul>
                 <div>
                     <div class="menu__proflie__picture">
                     </div>
-                    <button class="menu__contact__btn fw-700" type="button" title="contact button">
-                        <a href="mailto:joel.delpilar@medieinstitutet.se" target="_blank" title="contact">Let's
-                            talk!</a>
+                    <button class="menu__contact__btn fw-700 sendEmail" type="button" title="contact button"
+                        onclick="letsTalk()">
+                        Let's talk!
                     </button>
                 </div>
 
@@ -162,8 +162,9 @@
 
     <footer>
         <div class="footer__main__container">
-            <button class="footer__contact__btn fw-700" type="button" title="contact">
-                <a href="mailto:joel.delpilar@medieinstitutet.se" target="_blank">Let's talk!</a>
+            <button class="footer__contact__btn fw-700 sendEmail" type="button" title="contact button"
+                onclick="letsTalk()">
+                Let's talk!
             </button>
 
             <div class="footer__contact__socials">
@@ -180,6 +181,7 @@
             </div>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
