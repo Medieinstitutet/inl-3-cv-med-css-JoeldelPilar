@@ -1,0 +1,78 @@
+// <----- Fontfamily Roboto, fonts from google fonts ---->
+:root {
+	--fw-primary: 400;
+	--fw-secondary: 300;
+	--fw-bold: 700;
+
+	// <----- Responsive text-sizes ----->
+	--step--2: clamp(0.69rem, calc(0.62rem + 0.31vw), 1.12rem);
+	--step--1: clamp(0.83rem, calc(0.74rem + 0.42vw), 1rem);
+	--step-0: clamp(1rem, calc(0.87rem + 0.55vw), 1.75rem);
+	--step-1: clamp(1.2rem, calc(1.03rem + 0.72vw), 2.19rem);
+	--step-2: clamp(1.44rem, calc(1.22rem + 0.95vw), 2.73rem);
+	--step-3: clamp(1.73rem, calc(1.44rem + 1.24vw), 3.42rem);
+	--step-4: clamp(2.07rem, calc(1.7rem + 1.61vw), 4.27rem);
+	--step-5: clamp(2.49rem, calc(2rem + 2.09vw), 5.34rem);
+}
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: var(--step--1);
+	font-weight: var(--fw-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--fw-bold);
+}
+
+// <----- font sizes ----->
+
+.fs__200 {
+	font-size: var(--step--2);
+}
+
+.fs__300 {
+	font-size: var(--step--1);
+}
+
+.fs__400 {
+	font-size: var(--step-0);
+}
+
+.fs__500 {
+	font-size: var(--step-1);
+}
+
+.fs__600 {
+	font-size: var(--step-2);
+}
+
+.fs__700 {
+	font-size: var(--step-3);
+}
+
+.fs__800 {
+	font-size: var(--step-4);
+}
+
+.fs__900 {
+	font-size: var(--step-5);
+}
+
+// <----- font weight ----- >
+
+.fw-300 {
+	font-weight: var(--fw-secondary);
+}
+
+.fw-400 {
+	font-weight: var(--fw-primary);
+}
+
+.fw-700 {
+	font-weight: var(--fw-bold);
+}

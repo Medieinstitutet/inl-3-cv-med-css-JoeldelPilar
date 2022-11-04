@@ -1,0 +1,38 @@
+.menu__socials {
+	position: absolute;
+	bottom: 3rem;
+	width: 100%;
+	margin-inline: 0;
+	text-align: center;
+
+	& h2 {
+		margin-block-end: 1rem;
+		margin-inline: auto;
+	}
+
+	& div {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+	}
+}
+
+.fa__menu__custom {
+	font-size: var(--step-5);
+	text-decoration: none;
+	color: var(--clr-accent-900);
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.fa_footer__custom {
+	font-size: var(--step-5);
+	text-decoration: none;
+	color: var(--clr-primary-200);
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

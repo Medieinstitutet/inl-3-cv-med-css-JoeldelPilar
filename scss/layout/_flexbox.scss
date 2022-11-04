@@ -1,0 +1,39 @@
+.even__columns__flex {
+	display: flex;
+	flex-direction: column;
+	// flex-wrap: wrap;
+	justify-content: center;
+	max-width: 80vw;
+	margin-inline: auto;
+	gap: 3rem;
+}
+
+@media screen and (min-width: 1440px) {
+	.even__columns__flex {
+		flex-direction: row;
+	}
+}
+
+.cards__child {
+	margin-block-end: 1rem;
+	padding: 3rem;
+	margin-inline: auto;
+	max-width: 700px;
+}
+
+.footer__main__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__contact__socials {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+
+	& p {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+}

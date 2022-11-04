@@ -1,0 +1,217 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joel del Pilar CV</title>
+    <meta name="description" content="CV as webpage by Joel del Pilar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Front End Dev Joel del Pilar">
+    <meta property="og:type" content="webpage">
+    <meta property="og:url" content="https://medieinstitutet.github.io/inl-3-cv-med-css-JoeldelPilar/">
+    <meta property="og:image"
+        content="https://medieinstitutet.github.io/inl-3-cv-med-css-JoeldelPilar/assets/img/joeldelpilar.jpeg">
+    <link rel="apple-touch-icon" href="./assets/img/joeldelpilar_sm.jpeg">
+    <link rel="icon" href="./assets/img/joeldelpilar_sm.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/styles.css" type="text/css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header>
+        <label for="hamburgerMenu" class="visually-hidden">menu</label>
+        <input class="hamburger__menu__clicked" id="hamburgerMenu" type="checkbox" title="menu"
+            aria-label="menu button">
+
+        <div class="menu">
+            <button class="menu__btn" title="menu button" aria-label="menu button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav>
+                <ul class="menu__list fw-700">
+                    <li> <a href="#pagedown" class="menu-link" title="get to know me"> Get to know me</a></li>
+                    <li> <a href="#funfacts" class="menu-link" title="fun facts">Fun facts</a></li>
+                    <li> <a href="#knowledge" class="menu-link" title="knowledge">Knowledge</a></li>
+                    <li> <a href="#experience" class="menu-link" title="experience">Experience</a></li>
+                </ul>
+                <div>
+                    <div class="menu__proflie__picture">
+                    </div>
+                    <button class="menu__contact__btn fw-700 sendEmail" type="button" title="contact button"
+                        onclick="letsTalk()">
+                        Let's talk!
+                    </button>
+                </div>
+
+                <section class="menu__socials">
+                    <h2>Check us out too!</h2>
+                    <div>
+                        <a href="https://www.linkedin.com/in/joeldelpilar/" rel="noopener noreferrer"
+                            class="fa fa-linkedin fa__menu__custom" target="_blank" title="joel del pilar linkedin"></a>
+
+                        <a href="https://github.com/JoeldelPilar" rel="noopener noreferrer"
+                            class="fa fa-github fa__menu__custom" target="_blank" title="joel del pilar github"></a>
+                    </div>
+                </section>
+
+
+
+            </nav>
+        </div>
+        <div class="hero">
+            <section class="hero__flex">
+                <h1 class="hero__flex--title fs__900">Joel del Pilar</h1>
+                <span class="fw-400 fs__500">Front End Dev Student</span><br>
+                <a href="https://medieinstitutet.se/" rel="noopener noreferrer" target="_blank"
+                    class="empower__link"><span>&#64;</span>Medieinstitutet</a>
+            </section>
+
+            <div class="hero__button__arrowdown">
+                <a data-scroll href="#pagedown" title="scroll down" class="hero__arrowdown">
+                    <div class="arrow"></div>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="page__main">
+
+        <div class="page__first__grid even__columns">
+
+            <article class="page__main_grid--article article__left" id="pagedown">
+                <h2>Get to know me</h2>
+                <p>
+                    Former electrician that decided to take a new path in my career. At the moment I'm studing
+                    Front End Development at "Medieinstiutet" in Stockholm, Sweden. <br>
+                    I'm the kind of person that likes struckture and order, perfect qualities for a programmer don't you
+                    think?
+                    I'm always trying my best to do things the right way, which I realised can be a challange in this
+                    profession, things can be
+                    done in so many ways and none of them are wrong and several of them are good, help me choose!!
+                    (haha). <br>
+                    There is alot more to say and you are free to contact me if you like. Just click the button futher
+                    down or in the menu and let me know!
+                </p>
+            </article>
+
+            <div class="decorative__img__holder">
+                <img src="./assets/img/coffeecan_on_stol_v2.webp" alt="modern coffee can standing on a wooden stol"
+                    width="504" height="378">
+            </div>
+        </div>
+
+        <div class="page__second__grid even__columns">
+
+            <div class="decorative__img__holder">
+                <img src="./assets/img/education_decorative_enviroment_v2.webp"
+                    alt="bookshelf covering a whole wall and lightbulbs with warm light haning down from the roof"
+                    width="504" height="466">
+            </div>
+
+            <article class="page__main__grid--article article__right" id="education">
+                <h2>Education</h2>
+                <p>
+                    Right now I'm, as said earlier, studing Front End Development. And what you see here on this page is
+                    part of the
+                    course in HTML and CSS. The challenge was to create something that could be like a resumé, but of
+                    course the code is key.
+                    On my GitHub you can find this project and see how I build it, using semantic HTML and SCSS. <br>
+                    Down below I have listed some of the areas that I will have knowledge in when the time
+                    comes to enter the LIA (internship thats a part of the program).
+                </p>
+                <ul>
+                    <li class="list__html">HTML5</li>
+                    <li class="list__css">CSS</li>
+                    <li class="list__js">JavaScript &amp; TypeScript</li>
+                    <li class="list__react">React &amp; Vue</li>
+                    <li class="list__api">API - Node.js</li>
+                    <li class="list__ux">UX and Usability</li>
+                    <li class="list__agile">Agile working methods</li>
+                    <li class="list__testing">Testing</li>
+                </ul>
+            </article>
+        </div>
+
+        <section class="cards even__columns__flex">
+
+            <article class="cards__child card__funfact" id="funfacts">
+                <h3>Fun Facts</h3>
+                <p>
+                    Love taking pictures, using analog photo gear! Kodak Portra and T-Max is a few favorites. <br>
+                    Collecting watches, lets talk movments! <br>
+                    Father of 3 kids! <br>
+                    Married to Stephanie, oh boy she is lovley! <br>
+                    Guitars, guitars, guitars! <br>
+                    If I like something, then lets digg down!
+                </p>
+            </article>
+
+            <article class="cards__child card__knowladge" id="knowledge">
+                <h3>Knowledge</h3>
+                <p>
+                    A part from the things mentioned above I speak (and write, yes I wrote this!) english, which is my
+                    second language. Native language is Swedish and I can be polite in Spanish. I also have much
+                    experience of
+                    working with other people and leading small projects. I have no trouble learning new things and
+                    adapt to
+                    new environments.
+                </p>
+            </article>
+
+            <article class="cards__child card__experience" id="experience">
+                <h3>Experience</h3>
+                <p>
+                    I have always worked with other people in teams. First job was at one of Swedens biggest exebition
+                    halls, working
+                    with audio and building sets. I've done training in Swedish defence and worked with kids in frist to
+                    third grade. <br>
+                    Lates job was in the family company as a electrician, learned to lead others and take
+                    responsibility. Through 2022 I'v worked
+                    on my own skills in web development, building project, components etc. Have gotten good feedback
+                    from teatchers when I started studing, best practices
+                    was something I started implement from the start.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer__main__container">
+            <button class="footer__contact__btn fw-700 sendEmail" type="button" title="contact button"
+                onclick="letsTalk()">
+                Let's talk!
+            </button>
+
+            <div class="footer__contact__socials">
+
+                <p class="fw-700"><span class="footer__hider">Don't forget about us!</span>
+                    <span class="footer__arrow right bounce" title="arrow right"></span>
+                </p>
+
+                <a href="https://www.linkedin.com/in/joeldelpilar/" rel="noopener noreferrer"
+                    class="fa fa-linkedin fa_footer__custom" target="_blank" title="joel del pilar linkedin"></a>
+
+                <a href="https://github.com/JoeldelPilar" rel="noopener noreferrer"
+                    class="fa fa-github fa_footer__custom" target="_blank" title="joel del pilar github"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

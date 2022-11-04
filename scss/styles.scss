@@ -1,0 +1,62 @@
+@forward "base";
+@forward "abstracts";
+@forward "layout";
+@forward "components";
+
+.cards__child {
+	h3 {
+		color: var(--clr-accent-200);
+		margin-block-end: 1rem;
+	}
+}
+
+.cards__child h3 {
+	padding-inline-start: 1.5rem;
+	border-radius: 10rem 0 10rem 0.4rem;
+	background: rgb(228, 228, 220);
+	background: linear-gradient(-90deg, rgba(242, 243, 204, 1), rgb(20, 48, 12) 80%);
+}
+
+.decorative__img__holder img {
+	height: auto;
+	border-radius: 4rem 2rem 0.7rem 2rem;
+	// object-fit: cover;
+}
+
+.article__right ul {
+	list-style: inside;
+	line-height: 1.75rem;
+	padding: 1.5rem 0rem 0rem 1rem;
+}
+
+.list__html {
+	list-style-image: url(../assets/svg/html.svg);
+}
+
+.list__css {
+	list-style-image: url(../assets/svg/css.svg);
+}
+
+.list__js {
+	list-style-image: url(../assets/svg/js.svg);
+}
+
+.list__react {
+	list-style-image: url(../assets/svg/react.svg);
+}
+
+.list__api {
+	list-style-image: url(../assets/svg/api.svg);
+}
+
+.list__ux {
+	list-style-image: url(../assets/svg/user.svg);
+}
+
+.list__agile {
+	list-style-image: url(../assets/svg/agile.svg);
+}
+
+.list__testing {
+	list-style-image: url(../assets/svg/testing.svg);
+}

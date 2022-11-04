@@ -1,0 +1,39 @@
+// <---------- grid layout styles ------------>
+
+.even__columns {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	padding-inline: 3rem;
+	width: min(100% - 2.5rem, 75rem);
+	margin-inline: auto;
+	justify-items: center;
+}
+
+@media screen and (min-width: 50rem) {
+	.even__columns {
+		grid-template-columns: 1fr 1fr;
+		padding-inline: 5rem;
+	}
+}
+
+.page__first__grid {
+	margin-block-end: 4rem;
+}
+
+.page__second__grid {
+	margin-block-end: 10rem;
+}
+
+.cards {
+	margin-block-end: 4rem;
+}
+
+.page__main__grid--article {
+	order: -1;
+}
+@media screen and (min-width: 50rem) {
+	.page__main__grid--article {
+		order: 2;
+	}
+}

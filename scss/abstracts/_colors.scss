@@ -1,0 +1,15 @@
+// <----- CSS variables to set colors ----->
+:root {
+	--clr-primary-100: hsl(0, 0%, 100%);
+	--clr-primary-200: hsl(60, 13%, 88%);
+	// --clr-primary-400: rgb(108, 132, 131);
+	--clr-primary-400: rgb(71, 85, 84);
+	--clr-primary-700: hsla(203, 30%, 26%, 0.486);
+	--clr-primary-900: hsl(0, 0%, 0%);
+
+	--clr-accent-100: hsl(83, 11%, 76%);
+	--clr-accent-200: hsl(60, 23%, 94%);
+	--clr-accent-500: rgb(169, 169, 162);
+	--clr-accent-900: hsl(171, 33%, 30%);
+	--clr-accent-950: hsla(171, 33%, 19%, 1);
+}

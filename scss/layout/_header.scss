@@ -1,0 +1,202 @@
+header {
+	position: relative;
+	margin-block-end: 4rem;
+}
+.visually-hidden {
+	position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+.hero {
+	background-image: url(../assets/img/header_background_mobile.webp);
+	background-color: rgba(40, 100, 40, 0.7);
+	background-size: cover;
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-blend-mode: color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+@media screen and (min-width: 50rem) {
+	.hero {
+		background-image: url(../assets/img/header_background_desktop.webp);
+	}
+}
+
+.hero__flex--title {
+	color: var(--clr-primary-200);
+	letter-spacing: 0.15em;
+}
+
+.hero__flex {
+	color: var(--clr-primary-200);
+}
+
+.empower__link {
+	color: inherit;
+}
+
+// <----------------- Hamburger menu ---------------------->
+// Credits to Jenni Pulli, https://github.com/postmodernistx
+// minor changes made by the author such as animation and some styling.
+
+.menu__btn {
+	width: 2.1875rem;
+	height: 2.1875rem;
+	background: transparent;
+	border: 0;
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 20;
+	pointer-events: none;
+
+	span {
+		display: block;
+		width: 2.1875rem;
+		height: 0.1875rem;
+		background-color: var(--clr-accent-500);
+		border-radius: 0.375rem;
+		margin-block-end: 0.25rem;
+	}
+}
+
+.menu__btn:hover span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger__menu__clicked {
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 10;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.hamburger__menu__clicked:checked + .menu button span {
+	position: absolute;
+	transition: all 0.2s ease-in-out;
+}
+
+.hamburger__menu__clicked:checked + .menu button span:nth-child(1) {
+	transform: rotate(45deg);
+}
+
+.hamburger__menu__clicked:checked + .menu button span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger__menu__clicked:checked + .menu button span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: hsla(60, 13%, 88%, 0.9);
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	visibility: hidden;
+}
+
+@media screen and (min-width: 50rem) {
+	nav {
+		width: 50vw;
+	}
+}
+
+@media screen and (min-width: 90rem) {
+	nav {
+		width: 30vw;
+	}
+}
+
+// <----- Closing nav when links are clicked ------>
+
+.hamburger__menu__clicked:checked + .menu nav {
+	visibility: visible;
+	opacity: 1;
+}
+
+.hamburger__menu__clicked:checked ~ div .hero__button__arrowdown {
+	visibility: hidden;
+}
+
+.menu__list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin-block-start: 5rem;
+	margin-inline-end: 3rem;
+	gap: 2rem;
+	text-align: end;
+	font-size: var(--step-0);
+
+	& > li a {
+		color: var(--clr-primary-900);
+		text-decoration: none;
+	}
+}
+
+.menu__proflie__picture {
+	background-image: url(../assets/img/joeldelpilar.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 150px;
+	height: 180px;
+	border-radius: 50%;
+	display: flex;
+	position: absolute;
+	top: 5rem;
+	right: 50%;
+}
+
+// <-------------------- Scroll down Arrow --------------------->
+// <----- credits to https://codepen.io/pjwiebe/pen/VmmxpM ----->
+// <- I've added the rounded background and added code for positioning ->
+
+.arrow {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-block-start: 0.325rem;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(45deg);
+	-webkit-transition: border-width 150ms ease-in-out;
+	transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+	border-bottom-width: 0.25rem;
+	border-right-width: 0.25rem;
+}
+
+.hero__button__arrowdown {
+	position: absolute;
+	display: flex;
+	// align-items: center;
+	justify-content: center;
+	height: 3rem;
+	width: 3rem;
+	bottom: 1rem;
+	background-color: var(--clr-primary-700);
+	border-radius: 2rem;
+}
