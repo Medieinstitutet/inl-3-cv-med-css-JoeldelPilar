@@ -15,16 +15,6 @@ if ("sendEmail" !== undefined && "sendEmail" !== null) {}
 
 // <------------ Close menu when links are clicked --------------->
 
-
-
-    // function closeMenu() {
-    //     console.log("hej")
-    //     document.getElementById("hamburgerMenu").removeAttribute("checked");
-    // }
-
-
-
-
 // <-----Credits Alex P FED22D ----->
 
     //Lägg in en class till alla länkar i menyn, och skriv classen här
